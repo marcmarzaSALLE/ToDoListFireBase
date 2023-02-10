@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercici1</string>
+    <string name="button_1">NO</string>
+    <string name="button_2">SÍ</string>
+    <string name="textView">¿La capital de España es Barcelona?</string>
+    <string name="trueMessage">CORRECTO!</string>
+    <string name="falseMessage">INCORRECTO!"</string>
+</resources>
