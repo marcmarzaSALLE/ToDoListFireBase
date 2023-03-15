@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Adivina capitales</string>
+    <string name="button_1">NO</string>
+    <string name="button_2">SÍ</string>
+    <string name="titleQuestion">Pregunta número: </string>
+    <string name="messageAnswerCorrect">Número de respuestas correctas: </string>
+    <string name="numberOfQuestion">Número de preguntas: </string>>
+    <string name="messageAnswerIncorrect">Número de respuestas incorrectas: </string>
+    <string name="question1">¿La capital de España es Barcelona?</string>
+    <string name="question2">¿La capital de Francia es París?</string>
+    <string name="question3">¿La capital de Italia es Milan?</string>
+    <string name="question4">¿La capital de Alemania es Berlin?</string>
+    <string name="question5">¿La capital de Portugal es Lisboa?</string>
+    <string name="question6">¿La capital de Belgica es Bruselas?</string>
+    <string name="question7">¿La capital de Argetina es Córdoba?</string>
+    <string name="question8">¿La capital de Austria es Viena?</string>
+    <string name="question9">¿La capital de Dinamarca es Odense?</string>
+    <string name="question10">¿La capital de Noruega es Bergen?</string>
+    <string name="answer1">NO</string>
+    <string name="answer2">SI</string>
+    <string name="answer3">NO</string>
+    <string name="answer4">SI</string>
+    <string name="answer5">Si</string>
+    <string name="answer6">SI</string>
+    <string name="answer7">NO</string>
+    <string name="answer8">SI</string>
+    <string name="answer9">NO</string>
+    <string name="answer10">NO</string>
+
+    <string name="trueMessage">CORRECTO!</string>
+    <string name="falseMessage">INCORRECTO!"</string>
+    <string name="txtViewQuestion">Preguntas</string>
+    <string name="txtUserAnswer">Turno de : </string>
+
+    <string-array name="question">
+        <item>@string/question1</item>
+        <item>@string/question2</item>
+        <item>@string/question3</item>
+        <item>@string/question4</item>
+        <item>@string/question5</item>
+        <item>@string/question6</item>
+        <item>@string/question7</item>
+        <item>@string/question8</item>
+        <item>@string/question9</item>
+        <item>@string/question10</item>
+
+    </string-array>
+
+    <string-array name="answers">
+        <item>@string/answer1</item>
+        <item>@string/answer2</item>
+        <item>@string/answer3</item>
+        <item>@string/answer4</item>
+        <item>@string/answer5</item>
+        <item>@string/answer6</item>
+        <item>@string/answer7</item>
+        <item>@string/answer8</item>
+        <item>@string/answer9</item>
+        <item>@string/answer10</item>
+
+    </string-array>
+</resources>

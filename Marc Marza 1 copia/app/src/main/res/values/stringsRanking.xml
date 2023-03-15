@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txtViewRanking"><u>RANKING PARTIDA</u></string>
+    <string name="txtViewRankingHistorial"><u>RANKING HISTORIAL</u></string>
+    <string name="txtTablePosition">Nº</string>
+    <string name="txtTableName">Nombre</string>
+    <string name="txtTableNumberAnswersCorrect">Correctas</string>
+    <string name="txtTableNumberAnswersIncorrect">Incorrectas</string>
+    <string name="btnReset">Volver a empezar</string>
+    <string name="btnRanking">Ranking partida</string>
+    <string name="btnRankingHistorial">Historial de partidas</string>
+</resources>

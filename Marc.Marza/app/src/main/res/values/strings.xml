@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="titleAplication">ToDo List</string>
+    <string name="titleTask">Título tarea</string>
+    <string name="descriptionTask">Descripción de la tarea</string>
+    <string name="saveTask">Guardar tarea</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="newTask">Nueva Tarea</string>
+    <string name="errorDate">La fecha tiene que ser actual o posterior</string>
+    <string name="emptyGap">No pueden haber campos vacios</string>
+    <string name="forToday">Para hoy</string>
+    <string name="planned">Planeadas</string>
+    <string name="noTaskRegister">No hay tareas registradas</string>
+    <string name="infoTask">Info tarea</string>
+    <string name="editTask">Editar tarea</string>
+    <string name="saveEditTask">Guardar cambios</string>
+    <string name="deleteTask">Tarea eliminada</string>
+</resources>

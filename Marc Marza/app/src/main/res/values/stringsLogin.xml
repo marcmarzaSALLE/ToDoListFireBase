@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="titleLogin">Quiz Register </string>
+    <string name="editTextNumberUser">Número de usuarios </string>
+    <string name="editTextNameUser">Nombre usuario</string>
+    <string name="btnStart">Comenzar</string>
+    <string name="toastGapRequerit">*Campo requerido</string>
+    <string name="btnSendNumberUser">Enviar</string>
+    <string name="txtNumberUser">Número de usuarios a registrar: </string>
+    <string name="btnNextUser">Siguiente usuario</string>
+    <string name="txtMsgUserRegister">Registrando usuario número: </string>
+    <string name="toastMinimumOneUser">*Mínimo el número de usuario ha de ser de 1 </string>
+    <string name="toastMaximumTenUser">*Máximo de usuarios son 10 </string>
+
+    <string name="btnRegisterNumberUser">Registrar</string>
+</resources>

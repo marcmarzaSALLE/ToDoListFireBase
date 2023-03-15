@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.ResultActivity">
+
+    <TextView
+        android:id="@+id/txtViewRanking"
+        android:layout_width="273dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="-525dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/txtViewRanking"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollViewTable"
+        android:layout_width="395dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="395dp"
+            android:layout_height="447dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/scrollViewTable"
+            app:layout_constraintEnd_toEndOf="@id/scrollViewTable"
+            app:layout_constraintStart_toStartOf="@id/scrollViewTable"
+            app:layout_constraintTop_toTopOf="@id/scrollViewTable">
+
+            <TableRow
+                android:id="@+id/tablePosition"
+                android:layout_width="50dp"
+                android:layout_height="200dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/txtViewRanking">
+
+                <TextView
+                    android:id="@+id/txtViewTablePosition"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/txtTablePosition"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtViewTableName"
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/txtTableName"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtViewTableCorrectAnswer"
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/txtTableNumberAnswersCorrect"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtViewTableIncorrectAnswer"
+                    android:layout_width="115dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/txtTableNumberAnswersIncorrect"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="184dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="-210dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/btnReset"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewTable" />
+
+    <Button
+        android:id="@+id/btnRanking"
+        android:layout_width="184dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/btnRankingHistorial"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewTable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
