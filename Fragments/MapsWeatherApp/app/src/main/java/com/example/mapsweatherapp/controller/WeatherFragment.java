@@ -22,7 +22,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.bumptech.glide.Glide;
 import com.example.mapsweatherapp.R;
 import com.example.mapsweatherapp.model.Ubication;
 import com.example.mapsweatherapp.model.WeatherUbication;
@@ -49,7 +48,7 @@ public class WeatherFragment extends Fragment {
     Spinner spinner;
 
     TextView txtName, txtWeather, txtDescription, txtTemp;
-    ImageView imgWeather;
+    pl.droidsonroids.gif.GifImageView imgWeather;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -69,8 +68,6 @@ public class WeatherFragment extends Fragment {
                 txtDescription.setText(weatherUbications.get(position).getDescription());
                 txtTemp.setText(weatherUbications.get(position).getTemp() + "°C");
                 Map<String,Integer> hashMap = manager.getDataMapIcon();
-                Uri uri = Uri.parse(String.valueOf(hashMap.get(weatherUbications.get(position).getDescription())));
-                Glide.with(requireContext()).load(uri).into(imgWeather);
                 Log.wtf("TAG", "onItemSelected: " + hashMap.get(weatherUbications.get(position).getDescription()));
             }
 
@@ -81,8 +78,7 @@ public class WeatherFragment extends Fragment {
                 txtDescription.setText(weatherUbications.get(0).getDescription());
                 txtTemp.setText(weatherUbications.get(0).getTemp() + "°C");
                 Map<String,Integer> hashMap = manager.getDataMapIcon();
-                Uri uri = Uri.parse(String.valueOf(R.drawable.clear_sky));
-                Glide.with(requireContext()).load(uri).into(imgWeather);
+                imgWeather.setImageURI(Uri.parse(String.valueOf(hashMap.get(weatherUbications.get(0).getDescription()))));
 
             }
         });
@@ -96,7 +92,7 @@ public class WeatherFragment extends Fragment {
         txtDescription = view.findViewById(R.id.txtViewDescription);
         txtWeather = view.findViewById(R.id.txtViewWeather);
         txtTemp = view.findViewById(R.id.txtViewTemp);
-        imgWeather = view.findViewById(R.id.imgViewIcon);
+        imgWeather = view.findViewById(R.id.gifImageView);
         weatherUbications = new ArrayList<>();
     }
 
