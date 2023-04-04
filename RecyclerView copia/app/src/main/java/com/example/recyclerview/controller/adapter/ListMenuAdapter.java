@@ -32,7 +32,6 @@ public class ListMenuAdapter extends RecyclerView.Adapter<ListMenuAdapter.ViewHo
         this.context=context;
         this.listener = listener1;
     }
-
     @Override
     public int getItemCount(){
         return menuTaskList.size();
